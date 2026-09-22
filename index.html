@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ครัวพิศมัย</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- หัวเว็บไซต์ -->
+    <header>
+        <h1>ครัวพิศมัย</h1>
+        <p>ส้มตำรสเด็ด แซ่บถึงใจ</p>
+
+        <nav>
+            <a href="#home">หน้าแรก</a>
+            <a href="#menu">เมนู</a>
+            <a href="#order">สั่งอาหาร</a>
+            <a href="#contact">ติดต่อเรา</a>
+        </nav>
+    </header>
+
+
+    <!-- หน้าแรก -->
+    <section id="home" class="hero">
+        <div>
+            <h2>ส้มตำแซ่บๆ พร้อมเสิร์ฟ 🌶️</h2>
+            <p>เลือกความเผ็ดได้ตามใจคุณ</p>
+
+            <a href="#menu" class="btn">ดูเมนูอาหาร</a>
+        </div>
+    </section>
+
+
+    <!-- เมนูอาหาร -->
+    <section id="menu" class="menu">
+
+        <h2 class="title">🍽️ เมนูอาหาร</h2>
+
+        <!-- ส้มตำ -->
+        <h3 class="menu-category">🌶️ ส้มตำ</h3>
+
+        <div class="menu-grid">
+
+            <div class="food-card">
+                <img src="images/ส้มตำปูปลาร้า.jpg" class="food-image" alt="ส้มตำปูปลาร้า">
+                <div>
+                    <h3>ส้มตำปูปลาร้า</h3>
+                    <p>40 บาท</p>
+                    <button onclick="addOrder('ส้มตำปูปลาร้า', 40)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ตำไทย.jpg" class="food-image" alt="ส้มตำไทย">
+                <div>
+                    <h3>ส้มตำไทย</h3>
+                    <p>40 บาท</p>
+                    <button onclick="addOrder('ส้มตำไทย', 40)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ตำไทยไข่เค็ม.avif" class="food-image" alt="ส้มตำไทยไข่เค็ม">
+                <div>
+                    <h3>ส้มตำไทยไข่เค็ม</h3>
+                    <p>55 บาท</p>
+                    <button onclick="addOrder('ส้มตำไทยไข่เค็ม', 55)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ตำซั่ว.jpg" class="food-image" alt="ตำซั่ว">
+                <div>
+                    <h3>ตำซั่ว</h3>
+                    <p>50 บาท</p>
+                    <button onclick="addOrder('ตำซั่ว', 50)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ตำขนมจีน.webp" class="food-image" alt="ตำขนมจีน">
+                <div>
+                    <h3>ตำขนมจีน</h3>
+                    <p>40 บาท</p>
+                    <button onclick="addOrder('ตำขนมจีน', 40)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ตำทะเล.webp" class="food-image" alt="ส้มตำทะเล">
+                <div>
+                    <h3>ส้มตำทะเล</h3>
+                    <p>80 บาท</p>
+                    <button onclick="addOrder('ส้มตำทะเล', 80)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- อาหารอีสาน -->
+        <h3 class="menu-category">🍖 อาหารอีสาน</h3>
+
+        <div class="menu-grid">
+
+            <div class="food-card">
+                <img src="images/ซุปหน่อไม้.jpg" class="food-image" alt="ซุปหน่อไม้">
+                <div>
+                    <h3>ซุปหน่อไม้</h3>
+                    <p>40 บาท</p>
+                    <button onclick="addOrder('ซุปหน่อไม้', 40)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ลาบ.webp" class="food-image" alt="ลาบ">
+                <div>
+                    <h3>ลาบเนื้อ / หมู</h3>
+                    <p>60 บาท</p>
+                    <button onclick="addOrder('ลาบเนื้อ / หมู', 60)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/น้ำตก.jpg" class="food-image" alt="น้ำตก">
+                <div>
+                    <h3>น้ำตกเนื้อ / หมู</h3>
+                    <p>60 บาท</p>
+                    <button onclick="addOrder('น้ำตกเนื้อ / หมู', 60)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/แกงอ่อม.jpg" class="food-image" alt="แกงอ่อม">
+                <div>
+                    <h3>แกงอ่อมเนื้อ / หมู / ไก่</h3>
+                    <p>60 บาท</p>
+                    <button onclick="addOrder('แกงอ่อมเนื้อ / หมู / ไก่', 60)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/แกงอ่อมไก่ใส่หน่อไม้.jpg" class="food-image" alt="แกงอ่อมไก่ใส่หน่อไม้">
+                <div>
+                    <h3>แกงอ่อมไก่ใส่หน่อไม้ส้ม</h3>
+                    <p>60 บาท</p>
+                    <button onclick="addOrder('แกงอ่อมไก่ใส่หน่อไม้ส้ม', 60)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/แกงอ่อมไก่วุ้นเส้น.jpg" class="food-image" alt="แกงอ่อมไก่วุ้นเส้น">
+                <div>
+                    <h3>แกงอ่อมไก่ใส่วุ้นเส้น</h3>
+                    <p>60 บาท</p>
+                    <button onclick="addOrder('แกงอ่อมไก่ใส่วุ้นเส้น', 60)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ต้มแซ่บกระดูกอ่อน.jpg" class="food-image" alt="ต้มแซ่บกระดูกอ่อน">
+                <div>
+                    <h3>ต้มแซ่บกระดูกอ่อน</h3>
+                    <p>60 บาท</p>
+                    <button onclick="addOrder('ต้มแซ่บกระดูกอ่อน', 60)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ต้มยำรวมทะเล.jpg" class="food-image" alt="ต้มยำรวมมิตร">
+                <div>
+                    <h3>ต้มยำรวมมิตร / ทะเล</h3>
+                    <p>80 บาท</p>
+                    <button onclick="addOrder('ต้มยำรวมมิตร / ทะเล', 80)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ไก่ทอด -->
+        <h3 class="menu-category">🍗 ไก่ทอด</h3>
+
+        <div class="menu-grid">
+
+            <div class="food-card">
+                <img src="images/สะโพกไก่ทอด.jpg" class="food-image" alt="สะโพกไก่ทอด">
+                <div>
+                    <h3>ไก่สะโพก</h3>
+                    <p>50 บาท</p>
+                    <button onclick="addOrder('ไก่สะโพก', 50)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ไก่น่องเล้ก.webp" class="food-image" alt="ไก่น่องเล็ก">
+                <div>
+                    <h3>ไก่น่องเล็ก ชุดละ</h3>
+                    <p>30 บาท</p>
+                    <button onclick="addOrder('ไก่น่องเล็ก ชุดละ', 30)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ปีกไก่ทอด.jpg" class="food-image" alt="ปีกไก่ทอด">
+                <div>
+                    <h3>ปีกไก่ทอด ชุดละ</h3>
+                    <p>30 บาท</p>
+                    <button onclick="addOrder('ปีกไก่ทอด ชุดละ', 30)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ข้าวและเส้น -->
+        <h3 class="menu-category">🍚 ข้าวและเส้น</h3>
+
+        <div class="menu-grid">
+
+            <div class="food-card">
+                <img src="images/ข้าวเหนียว.jpg" class="food-image" alt="ข้าวเหนียว">
+                <div>
+                    <h3>ข้าวเหนียว</h3>
+                    <p>10 บาท</p>
+                    <button onclick="addOrder('ข้าวเหนียว', 10)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/ขนมจีน.jpg" class="food-image" alt="ขนมจีน">
+                <div>
+                    <h3>ขนมจีน</h3>
+                    <p>10 บาท</p>
+                    <button onclick="addOrder('ขนมจีน', 10)">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ตะกร้า -->
+    <section id="order" class="order">
+
+        <h2>🛒 รายการสั่งซื้อ</h2>
+
+        <div id="cart">
+            ยังไม่มีรายการอาหาร
+        </div>
+
+        <h3>
+            ราคารวม:
+            <span id="total">0</span> บาท
+        </h3>
+
+        <button class="confirm" onclick="confirmOrder()">
+            ยืนยันการสั่งซื้อ
+        </button>
+
+    </section>
+
+
+    <!-- ติดต่อ -->
+    <section id="contact" class="contact">
+
+        <h2>📞 ติดต่อร้าน</h2>
+
+        <p>📍 ที่อยู่: พฤกษา 95/2 ซ. กันตนา ต.บางม่วง อำเภอบางใหญ่ นนทบุรี 11140</p>
+        <p>☎️ โทร: 0886299249</p>
+        <p>⏰ เปิดทุกวัน: 09:00 - 20:00 น.</p>
+
+        <section class="map-section">
+    <h2>📍 แผนที่ร้าน</h2>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.12263255275872!2d100.40444091036339!3d13.841312309451089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e291a0e700ef63%3A0xd6928143c69501f!2z4LiE4Lij4Lix4Lin4Lie4Li04Lio4Lih4Lix4Lii!5e0!3m2!1sth!2sth!4v1790016164331!5m2!1sth!2sth"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ครัวพิศมัย</p>
+        <p>อร่อย แซ่บ สดใหม่ทุกวัน 🌶️</p>
+    </footer>
+
+
+    <!-- POPUP ชำระเงิน -->
+    <div id="payment" class="payment-overlay">
+
+        <div class="payment-box">
+
+            <button class="close-payment" onclick="closePayment()">
+                ×
+            </button>
+
+            <h2>💳 ชำระเงิน</h2>
+
+            <p class="payment-text">
+                สแกน QR Code เพื่อชำระเงิน
+            </p>
+
+            <div class="qr-box">
+                <img
+                    src="images/qr-payment.png"
+                    alt="QR Code ชำระเงิน"
+                >
+            </div>
+
+            <p>ยอดที่ต้องชำระ</p>
+
+            <div class="payment-total">
+                <span id="paymentTotal">0</span> บาท
+            </div>
+
+            <label class="upload-slip">
+                📎 เลือกสลิปการโอนเงิน
+                <input
+                    id="slipFile"
+                    type="file"
+                    accept="image/*"
+                >
+            </label>
+
+            <p id="fileName" class="file-name">
+                ยังไม่ได้เลือกสลิป
+            </p>
+
+            <button class="submit-slip" onclick="submitSlip()">
+                ยืนยันการชำระเงิน
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
