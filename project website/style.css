@@ -713,33 +713,3 @@ footer {
         align-items: flex-start;
     }
 }
-@media (max-width: 768px) {
-
-    body {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .menu {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    button {
-        max-width: 100%;
-    }
-}
